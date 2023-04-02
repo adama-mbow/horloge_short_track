@@ -25,7 +25,7 @@ def alarm(reveille):
         if now == reveille:
             print("levez vous")
             winsound.PlaySound("sound.wav",winsound.SND_ASYNC)
-            break
+        break
 
 def actual_time():
     reveille = f"{hour.get()}:{min.get()}:{sec.get()}"
