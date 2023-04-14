@@ -14,7 +14,7 @@ montre.geometry("1000x900+0+0")
 
 #créer une fonction qui permet de recuperer l'heure en temps réel et l'afficher tous les x ms    
 
-def alarm(reveille):
+"""def alarm(reveille):
     while True:
         time.sleep(1)
         temp_actuel = datetime.datetime.now()
@@ -33,7 +33,7 @@ def actual_time():
 
 
 
-setYourAlarm = Label(montre,text = "When to wake you up",fg="blue",relief = "solid",font=("Helevetica",7,"bold")).place(x=0, y=29)
+setYourAlarm = Label(montre,text = "When to wake you up",fg="blue",relief = "solid",font=("Helevetica",7,"bold")).place(x=0, y=29)"""
 
 # The Variables we require to set the alarm(initialization):
 hour = StringVar()
@@ -41,9 +41,9 @@ min = StringVar()
 sec = StringVar()
 
 #Time required to set the alarm clock:
-hourTime= Entry(montre,textvariable = hour,bg = "pink",width = 15).place(x=110,y=30)
+"""hourTime= Entry(montre,textvariable = hour,bg = "pink",width = 15).place(x=110,y=30)
 minTime= Entry(montre,textvariable = min,bg = "pink",width = 15).place(x=150,y=30)
-secTime = Entry(montre,textvariable = sec,bg = "pink",width = 15).place(x=200,y=30)
+secTime = Entry(montre,textvariable = sec,bg = "pink",width = 15).place(x=200,y=30)"""
 
 
 
@@ -86,12 +86,12 @@ recupererheure()
 
 # creer une alarme 
 
-hourTime= Entry(montre,textvariable = heure,bg = "pink",width = 15).place(x=110,y=30)
+"""hourTime= Entry(montre,textvariable = heure,bg = "pink",width = 15).place(x=110,y=30)
 minTime= Entry(montre,textvariable = minute,bg = "pink",width = 15).place(x=150,y=30)
 secTime = Entry(montre,textvariable = seconde,bg = "pink",width = 15).place(x=200,y=30)
 addTime = Label(montre,text = "Hour  Min   Sec",font=60).place(x = 110,)
 reveil = Button(montre, text="Alarme", command= actual_time)
-reveil.place(x=100, y=70, width=50, height=30,)  
+reveil.place(x=100, y=70, width=50, height=30,)  """
 
 
 montre.mainloop()
